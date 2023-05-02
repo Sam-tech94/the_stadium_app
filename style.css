@@ -177,3 +177,81 @@ header::before {
   font-size: 16px;
   color: #000000;
 }
+
+
+.start-tracking {
+  background-color: #262626;
+  width: 100%;
+  max-width: 1920px;
+  height: 147px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.start-tracking div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.title-start-tracking {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 17px;
+  color: #FFFFFF;
+}
+
+.btn-start-tracking {
+  padding: 15px 90px;
+  background-color: #178A1F;
+  color: #F7F7F7;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 300px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.footer-nav a {
+  font-family: Inter;
+  font-size: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.digital-platform {
+  display: flex;
+  align-items: flex-end;
+  /* margin-left: 80px; */
+  padding-bottom: 20px;
+}
+
+.digital-platform p {
+  font-family: Inter;
+  font-size: 23px;
+  color: #000000;
+  margin-left: 146px;
+}
+
+.footer-icons {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-icons i {
+  cursor: pointer;
+}
