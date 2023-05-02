@@ -15,6 +15,7 @@ header {
   background-repeat: no-repeat;
   height: 605px;
   max-width: 1920px;
+  z-index: 1;
 }
 
 header::before {
@@ -36,6 +37,7 @@ header::before {
   display: flex;
   align-items: center;
   gap: 10%;
+  z-index: 2;
 }
 
 .logo {
@@ -72,17 +74,17 @@ header::before {
 
 .stadium-section {
   position: absolute;
-  top: 50%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  top: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 50%;
 }
 
 .stadium-app {
-  width: 90%;
+  width: 75%;
+  margin-top: 15px;
+  margin-left: 15%;
 }
 
 .stadium-app h1 {
@@ -95,9 +97,8 @@ header::before {
 }
 
 .stadium-app img {
-  width: 100px;
   margin-top: 3%;
-  margin-right: 15%;
+  margin-left: 30%;
 }
 
 .text {
@@ -110,12 +111,14 @@ header::before {
   font-size: 36px;
   color: #FFFFFF;
   margin-top: 5%;
-  margin-left: 18%;
+  margin-left: 20%;
 }
 
 .stadium-section .btn {
-  width: 50%;
+  width: 60%;
   margin-top: 30px;
+  display: flex;
+  flex-direction: row;
 }
 
 .btn-download {
@@ -234,7 +237,6 @@ header::before {
 .digital-platform {
   display: flex;
   align-items: flex-end;
-  /* margin-left: 80px; */
   padding-bottom: 20px;
 }
 
@@ -254,4 +256,51 @@ header::before {
 
 .footer-icons i {
   cursor: pointer;
+}
+
+@media (max-width: 1280px) {
+  .header-nav {
+    justify-content: space-evenly;
+  }
+
+  .logo {
+    width: 17%;
+  }
+
+  .navbar {
+    width: 50%;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .stadium-section {
+    width: 100%;
+    top: 30%;
+    right: 6%;
+  }
+
+  .stadium-app h1 {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .text p {
+    font-size: 24px;
+  }
+
+  .btn-contact {
+    display: none;
+  }
+
+  .stadium-section .btn {
+    width: 28%;
+  }
+  
+  .about h2 {
+    font-size: 32px;
+  }
+
+  .about img {
+    margin-left: 55px;
+  }
 }
