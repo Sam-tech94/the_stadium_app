@@ -392,7 +392,11 @@ header::before {
     display: block;
   }
 
-  .test-child-1 p  {
+  .section-about {
+    row-gap: 0;
+  }
+
+  .test-child-1 p:last-child  {
     margin-bottom: 20px;
   }
 }
