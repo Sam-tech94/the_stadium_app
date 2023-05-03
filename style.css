@@ -6,6 +6,34 @@
   box-sizing: border-box;
 }
 
+.mobile-nav {
+  height: 125px;
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  background-color: #F7F7F7;
+  z-index: 2;
+  transition: 0.3s;
+}
+
+.mobile-nav a {
+  display: block;
+  font-family: Open Sans;
+  font-style: light;
+  font-size: 20px;
+  text-decoration: none;
+  color: #D5D5D5;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.mobile-nav a:focus {
+  color: #000000;
+  transition: 0.3s;
+}
+
 .header-nav .hamburger {
   display: none;
 }
@@ -271,6 +299,7 @@ header::before {
     width: 17%;
   }
 
+
   .navbar {
     width: 50%;
     align-items: center;
@@ -313,7 +342,6 @@ header::before {
   }
 
   .footer {
-    /* flex-direction: row; */
     justify-content: space-around;
   }
 
@@ -326,6 +354,7 @@ header::before {
     margin-left: 0;
   }
 }
+
 
 @media screen and (max-width: 844px) {
   .header-nav .navbar {
@@ -342,17 +371,20 @@ header::before {
   }
 
   .logo {
-    width: 40%;
+    width: 36%;
+    margin-bottom: 45px;
   }
 
-  .navbar {
-    height: 450px;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    background-color: wheat;
-    transition: 0.2s;
+  .hamburger {
+    margin-bottom: 45px;
+    cursor: pointer;
+  }
+
+  .mobile-nav.show {
+    display: block;
+  }
+
+  .stadium-app h1 {
+    margin-right: 0;
   }
 }
