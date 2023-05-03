@@ -237,7 +237,7 @@ header::before {
 .digital-platform {
   display: flex;
   align-items: flex-end;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 .digital-platform p {
@@ -302,5 +302,25 @@ header::before {
 
   .about img {
     margin-left: 55px;
+  }
+
+  .test-child-1 p {
+    margin-bottom: 30px;
+  }
+
+  .footer {
+    flex-direction: row;
+    min-height: 600px;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  .footer-nav {
+    gap: 30px;
+  }
+
+  .digital-platform p {
+    font-size: 20px;
+    margin-left: 0;
   }
 }
