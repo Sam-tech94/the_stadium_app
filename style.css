@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+.header-nav .hamburger {
+  display: none;
+}
+
 header {
   position: relative;
   background-color: #000000;
@@ -248,7 +252,7 @@ header::before {
 }
 
 .footer-icons {
-  width: 15%;
+  width: 19%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -309,10 +313,8 @@ header::before {
   }
 
   .footer {
-    flex-direction: row;
-    min-height: 600px;
+    /* flex-direction: row; */
     justify-content: space-around;
-    align-items: baseline;
   }
 
   .footer-nav {
@@ -322,5 +324,35 @@ header::before {
   .digital-platform p {
     font-size: 20px;
     margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 844px) {
+  .header-nav .navbar {
+    display: none;
+  }
+
+  .header-nav .hamburger {
+    display: block;
+    margin-right: 30px;
+  }
+
+  .header-nav {
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 40%;
+  }
+
+  .navbar {
+    height: 450px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background-color: wheat;
+    transition: 0.2s;
   }
 }
