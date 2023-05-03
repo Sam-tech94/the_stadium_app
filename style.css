@@ -387,4 +387,12 @@ header::before {
   .stadium-app h1 {
     margin-right: 0;
   }
+
+  .testimonials {
+    display: block;
+  }
+
+  .test-child-1 p  {
+    margin-bottom: 20px;
+  }
 }
