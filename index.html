@@ -14,24 +14,20 @@
       <div class="logo">
         <a href="#">Stadiums App</a>
       </div>
-      <div class="hamburger">
-        <i class="fa-sharp fa-light fa fa-bars fa-2x fa-2xl" style="color: #0f51c2;"></i>
-      </div>
-      <div class="navbar">
+      <div class="navbar" >
         <a href="#">Home</a>
         <a href="#">Download</a>
         <a href="#">Contact Us</a>
       </div>
+      <div class="hamburger ">
+        <i class="fa-sharp fa-light fa fa-bars fa-2x fa-2xl" style="color: #0f51c2;"></i>
+      </div>
     </div>
-    <nav class="mobile-nav">
-      <a href="#">Home</a>
-      <a href="#">Download</a>
-      <a href="#">Contact Us</a>
-    </nav>
     <div class="stadium-section">
       <div class="stadium-app">
         <h1>The Stadiums App</h1>
-        <img src="./bg_img/row.png" />
+        <span class="border"></span>
+        <!-- Change image to background image -->
       </div>
       <div class="text">
         <p>Keep track of stadiums that you have visited. Find out 
@@ -43,11 +39,11 @@
       </div>
     </div>
   </header>
-
+<main>
   <div class="section-about">
     <div class="about">
       <h2>About the App</h2>
-      <img src="./bg_img/row.png">
+      <span class="border"></span>
     </div>
     <div class="testimonials">
       <div class="test-child-1">
@@ -79,30 +75,46 @@
       <button class="btn-start-tracking">Get Started</button>
     </div>
   </div>
+</main>
 
-  <div class="footer">
+  <footer class="footer">
     <div class="footer-nav">
       <a href="#">Home</a>
       <a href="#">Contact Us</a>
       <a href="#">Dowload</a>
     </div>
-    <div class="digital-platform">
-      <p>RJM Digital Platforms. 2020</p>
+    <div class="footer2">
+      <div class="digital-platform">
+        <p>RJM Digital Platforms. 2020</p>
+      </div>
+      <div class="footer-icons">
+        <i class="fa-brands fa-square-facebook  fa-2xl" style="color: #0669ea;"></i>
+        <i class="fa-brands fa-instagram  fa-2xl"></i>
+        <i class="fa-brands fa-twitter  fa-2xl" style="color: #03A9F4;"></i>
+      </div>
     </div>
-    <div class="footer-icons">
-      <i class="fa-brands fa-square-facebook  fa-2xl" style="color: #0669ea;"></i>
-      <i class="fa-brands fa-instagram  fa-2xl"></i>
-      <i class="fa-brands fa-twitter  fa-2xl" style="color: #03A9F4;"></i>
-    </div>
-  </div>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const mobileNav = document.querySelector('.navbar');
+      // const close = document.querySelector(".fa-sharp");
   
-  <script>
-    const hamburger = document.querySelector(".hamburger");
-    const mobileNav = document.querySelector('.mobile-nav');
+      hamburger.addEventListener("click", () => {
+        mobileNav.classList.add("mobile-nav");
+        close.classList.toggle('fa-bars')
+        close.classList.toggle("fa-xmark")
+      });
 
-    hamburger.addEventListener("click", () => {
-      mobileNav.classList.toggle('show')
-    })
-  </script>
+      // close.addEventListener("click", () => {
+      //   mobileNav.classList.remove("mobile-nav");
+      //   close.classList.toggle("fa-bars");
+      //   close.classList.toggle("fa-xmark")
+      // })
+
+
+    </script>
+  </footer>
+
+
+ 
 </body>
 </html>
