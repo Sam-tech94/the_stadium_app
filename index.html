@@ -14,10 +14,10 @@
       <div class="logo">
         <a href="#">Stadiums App</a>
       </div>
-      <div class="navbar" >
-        <a href="#">Home</a>
+      <div class="navbar active" >
+        <a class="active" href="#">Home</a>
         <a href="#">Download</a>
-        <a href="./contact-us/contact-us.html">Contact Us</a>
+        <a href="./contact-us/contact.html">Contact Us</a>
       </div>
       <div class="hamburger ">
         <i class="fa-sharp fa-light fa fa-bars fa-2x fa-2xl" style="color: #0f51c2;"></i>
@@ -95,24 +95,6 @@
     </div>
   </footer>
 
-  <script>
-    const hamburger = document.querySelector(".hamburger");
-    const mobileNav = document.querySelector('.navbar');
-    // const close = document.querySelector(".fa-sharp");
-
-    hamburger.addEventListener("click", () => {
-      mobileNav.classList.add("mobile-nav");
-      close.classList.toggle('fa-bars')
-      close.classList.toggle("fa-xmark")
-    });
-
-    // close.addEventListener("click", () => {
-    //   mobileNav.classList.remove("mobile-nav");
-    //   close.classList.toggle("fa-bars");
-    //   close.classList.toggle("fa-xmark")
-    // })
-
-
-  </script>
+  <script src="./script.js"></script>
 </body>
 </html>
