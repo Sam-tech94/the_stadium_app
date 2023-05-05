@@ -63,3 +63,49 @@ form {
   border: none;
   cursor: pointer;
 }
+
+@media (max-width: 1100px) {
+  main {
+    gap: 40px;
+  }
+
+  .download {
+    margin-top: 21px;
+  }
+  
+  .download-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .download p {
+    font-size: 18px;
+  }
+
+  .input-field {
+    width: 629px;
+  }
+
+  .button {
+    width: 271px;
+  }
+}
+
+@media (max-width: 650px) {
+  .download {
+    width: 301px;
+    margin-top: 100px;
+  }
+
+  .download-title {
+    font-size: 36px;
+  }
+
+  .download p {
+    font-size: 21px;
+  }
+
+  .input-field {
+    width: 271px;
+  }
+}
