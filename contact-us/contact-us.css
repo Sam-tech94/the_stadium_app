@@ -90,6 +90,10 @@ form {
 }
 
 @media (max-width: 650px) {
+  .contact-us {
+    margin-top: 90px;
+  }
+
   .contact-title {
     font-size: 36px;
   }
