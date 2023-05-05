@@ -87,3 +87,26 @@ form {
     margin-bottom: 46px;
   }
 }
+
+@media (max-width: 650px) {
+  .contact-title {
+    font-size: 36px;
+  }
+
+  .contact-paragraph {
+    width: 352px;
+  }
+
+  .contact-paragraph p {
+    font-size: 21px;
+  }
+
+  .input-field {
+    width: 271px;
+    height: 43px;
+  }
+
+  main {
+    margin-top: 40px;
+  }
+}

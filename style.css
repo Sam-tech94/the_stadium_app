@@ -133,7 +133,7 @@ header::before {
 }
 .border {
   width: 100px;
-  height: 3px;
+  height: 2px;
   background-color: #178A1F;
   margin: 0 auto;
   display: block;
@@ -404,6 +404,23 @@ header::before {
 }
 
 @media screen and (max-width: 550px) {
+  .stadium-section {
+    top: 200px;
+    gap: 25px;
+  }
+
+  .stadium-app h1 {
+    font-size: 36px;
+  }
+
+  .text p {
+    font-size: 20px;
+  }
+
+  .btn-download {
+    margin-top: 15px;
+  }
+
   .footer {
     display: block;
     padding: 20px;
